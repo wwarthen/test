@@ -1,0 +1,17 @@
+name: Release Build
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+
+  # Build new release
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Dump GitHub Context
+        run: echo "${{toJSON(github)}}"    
