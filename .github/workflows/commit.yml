@@ -6,10 +6,6 @@ on:
       - '**'
     tags-ignore:
       - '**'
-
-env:
-  COMMIT_REF=$(git rev-parse --short $GITHUB_SHA)
-
 jobs:
   buildLinux:
 
