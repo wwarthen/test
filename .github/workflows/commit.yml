@@ -24,7 +24,8 @@ jobs:
       - name: Upload Artifact
         uses: actions/upload-artifact@v7
         with:
-          name: RomWBW-${{env.COMMIT_REF}}-Linux
+#          name: RomWBW-${{env.COMMIT_REF}}-Linux
+          name: RomWBW-$COMMIT_REF-Linux
           path: .
 
   buildMacOS:
